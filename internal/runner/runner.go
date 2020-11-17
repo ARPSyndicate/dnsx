@@ -322,28 +322,28 @@ func (r *Runner) worker() {
 				continue
 			}
 			if r.options.A {
-				r.outputRecordType(domain, dnsData.A)
+				r.outputRecordType("[A] "+domain, dnsData.A)
 			}
 			if r.options.AAAA {
-				r.outputRecordType(domain, dnsData.AAAA)
+				r.outputRecordType("[AAAA] "+domain, dnsData.AAAA)
 			}
 			if r.options.CNAME {
-				r.outputRecordType(domain, dnsData.CNAME)
+				r.outputRecordType("[CNAME] "+domain, dnsData.CNAME)
 			}
 			if r.options.PTR {
-				r.outputRecordType(domain, dnsData.PTR)
+				r.outputRecordType("[PTR] "+domain, dnsData.PTR)
 			}
 			if r.options.MX {
-				r.outputRecordType(domain, dnsData.MX)
+				r.outputRecordType("[MX] "+domain, dnsData.MX)
 			}
 			if r.options.NS {
-				r.outputRecordType(domain, dnsData.NS)
+				r.outputRecordType("[NS] "+domain, dnsData.NS)
 			}
 			if r.options.SOA {
-				r.outputRecordType(domain, dnsData.SOA)
+				r.outputRecordType("[SOA] "+domain, dnsData.SOA)
 			}
 			if r.options.TXT {
-				r.outputRecordType(domain, dnsData.TXT)
+				r.outputRecordType("[TXT] "+domain, dnsData.TXT)
 			}
 		}
 	}
